@@ -1,0 +1,92 @@
+main {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+main .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  row-gap: 20px;
+  gap: 50px;
+}
+
+main .contact .contact__left {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+main .contact .contact__left h2 {
+  font-size: 30px;
+}
+
+main .contact .contact__left img {
+  max-width: 300px;
+}
+
+main .contact .contact__left p {
+  font-size: 18px;
+}
+
+main .contact form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+main .contact form input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+main .contact form input:focus {
+  outline: none;
+  border-color: #007bff; /* Cor ao focar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+main .contact form input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+main .contact form textarea#input-textarea {
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical; /* Permite redimensionar verticalmente */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .contact form textarea#input-textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Cor ao focar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+main .contact form textarea#input-textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}

@@ -1,0 +1,43 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18ch; /* Ajuste para o comprimento exato do texto */
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.about__title {
+  font-family: monospace;
+  font-size: 2rem; /* Ajuste conforme necessário */
+  border-right: 4px solid;
+  width: 18ch; /* Ajuste ao comprimento do texto */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(18) forwards, blinking 0.5s step-end infinite;
+}
+
+.courses {
+  align-items: center;
+}
+
+.courses a {
+  text-decoration: none;
+}
+
+.about__left .courses a {
+  align-items: center;
+  margin: 10px;
+}
+
+.about__left .courses img {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+}
